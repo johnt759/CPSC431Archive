@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Add New User</title>
+  </head>
+  <body>
+    <form action="add_user.php" method="post" enctype="multipart/form-data">
+    <table style="border: 0px;">
+	<tr>
+		<h1> Welcome new user! </h1>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+      <h2>Please enter the new user's profile details below.<h2>
+    </tr>
+    <tr>
+      <td>Username:</td>
+      <td><input type="text" name="username" size="15" maxlength="50" /></td>
+    </tr>
+	<tr>
+	</tr>
+    <tr>
+      <td>Password:</td>
+      <td><input type="password" name="password" size="15" maxlength="50" /></td>
+    </tr>
+	<tr>
+	</tr>
+    <tr>
+      <td>Gender:</td>
+      <td>
+	    <select name="gender" id="sort-choice">
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+		<option value="Neutral">Neutral</option>
+		</select>
+	</td>
+    </tr>
+	<tr>
+	</tr>
+    <tr>
+      <td>Starting Weight:</td>
+      <td><input type="text" name="start_weight" size="15" maxlength="50" /></td>
+    </tr>
+	<tr>
+	</tr>
+    <tr>
+      <td>Current Goal:</td>
+      <td>
+	    <select name="goal" id="goal-choice">
+		<option value="maintain">Maintain Weight</option>
+		<option value="lose_weight">Lose Weight</option>
+		<option value="gain_weight">Gain Weight</option>
+		</select>
+	  </td>
+    </tr>
+	<tr>
+	  <td>Select picture for profile:</td>
+	</tr>
+    </tr>
+	  <td colspan="2" style="text-align: center;"><input type="file" name="file"/></td>
+    <tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><input type="submit" value="Add User" name="submit_user"/></td>
+    </tr>
+	<tr>
+      <td colspan="2" style="text-align: center;"><input type="submit" value="Return to Login" formaction="index.html"/></td>
+    </tr>
+    </table>
+    </form>
+  </body>
+</html>
